@@ -5,4 +5,6 @@ Screenshot
 
 
 
-Check out my PORTFOLIO 
+Check out PORTFOLIO 
+
+https://jinnyyyyy.github.io/My-page/
