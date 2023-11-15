@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body{
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display:flex;
+    min-height: 55px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.2);
+}
+
+.myname {
+    padding-top: 20px;
+    margin-left: 20px;
+    font-style: helvetica;
+}
+
+ul {
+    display:flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+}
+
+ul li {
+    width:200px;
+    min-height: 55px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color:#000;
+}
+
+ul li:hover{
+    cursor:pointer;
+    background-color: #eee;
+}
+
+.container{
+    text-align: center;
+    height: 90px;
+    margin-top: 20px;
+}
+
+#headline,
+#about-me
+/* #design */
+{
+    min-height: 500px;
+    flex: 1;
+}
+
+#about-me{
+    background-color:rgba(143,140,152);
+    text-decoration: none;
+}
+#about-me::after{
+    content: "JC";
+    position: absolute;
+    line-height: 10px;
+    font-size: 270pt;
+    right: 0;
+    z-index: -0.9;
+    color: darkslategray;
+    opacity: 40%;
+}
+
+#portfolio{
+    display: flex;
+    justify-content: flex;
+}
+
+.headline-img {
+    padding:12px
+}
+
+.circle-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#skills {
+    flex-direction: column;
+    display: flex;
+    font-size: 25pt;
+    /* color: rgba(198,181,217); */
+    color: darkslategrey;
+    opacity: 50%;
+}
+
+.title {
+    font-size: 30pt;
+    padding: 15px;
+    color: #ccc;
+    /* display: flex; */
+}
+
+.abttitle{
+    font-size: 15pt;
+    padding: 15px;
+    font-family: "helvetica";
+    float: left;
+    color: #ccc;
+}
+
+.subsentence{
+    font-size: 12pt;
+    padding: 15px;
+    font-family: "helvetica";
+    color: #ccc;
+}
+
+.subsentencee{
+    font-size: 12pt;
+    padding: 15px;
+    font-family: "helvetica";
+    margin-top: -35px;
+    color: #ccc;
+}
+
+
+.image-box {
+    width: 500px;
+    margin: 80px 0 85px 0; 
+    height: 240px;
+    padding: 13px 14px;
+    transition: 1s;
+    opacity: 90%;
+    position: relative;
+}
+
+.image-box:hover{
+    transform: scale(1.5);
+}
+
+
+.image-box img {
+    width: 100%;
+    /* transition: transform 1s ease-in-out,filter 1s ease-in-out; */
+}
+
+.image-box img:hover{
+    filter: brightness(10%);
+}
+
+
+.image-box p{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-weight: bold;
+    color: violet;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-box:hover p{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#portfoliobody {
+    display: flex;
+    margin-top: -50px;
+}
+
+
+.abtmeimage{
+    width: 310px;
+    float: left;
+    padding:4px 10px 10px 20px;
+    opacity: 90%;
+}
+
+.skillbox {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    transition: 0.3s;
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+    color: rgb(87, 99, 92);
+}
+
+#testimonials{
+    background-color:rgba(143,140,152);
+    text-decoration: none;
+    display: flex;
+    height: 150px;
+}
+
+#testimonialsbody {
+    background-color:rgba(143,140,152);
+    display: flex;
+    margin-bottom:-20px;
+}
+
+
+
+#skillshtml {background:conic-gradient(#f1f5d8 90%,#eaf596 10%)}
+#skillscss {background:conic-gradient(#cfe1f0 90%,#96c5ed 10%) }
+#skillsjs {background:conic-gradient(#f0d6d4 70%, #f8a49e 30%)}
+#skillsMongoDB {background:conic-gradient(rgb(203, 214, 214) 60%, rgb(169, 198, 198) 40%)}
+#skillsNodeJS {background:conic-gradient(rgb(215, 203, 221) 60%, rgb(200, 160, 217) 40%)}
+#skillsReact {background:conic-gradient(rgb(242, 215, 229) 50%, rgb(248, 187, 219) 50%)} 
+
+
+.insidebox {
+   margin-top: -100px;
+   margin-left: 20px;
+   width: inherit;
+   height: inherit;
+   border-radius: 50%;
+   text-align: center;
+   /* box-shadow: 3px 3px 6px -1px rgb(0,0,0,.2); */
+   box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+}
+
+.box-font {
+    text-align: center;
+    color: rgb(65, 17, 17);
+}
+
+h1{
+    text-align: center;
+    margin-top: 120px;
+    font-family: "Lobster";
+    font-weight:200;
+    font-size: 80px;
+    height: 80px;
+    letter-spacing: -5px;
+}
+
+
+h1 span:nth-child(1){
+    color: rgb(108, 24, 24);
+    animation-name: main;
+    animation-duration: 4s;
+}
+
+@keyframes main {
+    from{color: darkseagreen}
+    to{color: bisque;}
+}
+
+
+h1 span:nth-child(2){
+    color: rgb(244, 164, 16);
+    animation-name: front;
+    animation-duration: 5s;
+}
+
+@keyframes front {
+    from{color: rgb(214, 164, 222)}
+    to{color: rgb(180, 235, 247);}
+}
+
+h1 span:nth-child(3){
+    color: rgb(242, 235, 45);
+    animation-name: main;
+    animation-duration: 4s;
+}
+
+@keyframes main {
+    from{color: darkseagreen}
+    to{color: bisque;}
+}
+
+h1 span:nth-child(4){
+    color: rgb(108, 24, 24);
+    animation-name: middle;
+    animation-duration: 5s;
+}
+
+@keyframes middle {
+    from{color: rgb(214, 164, 222)}
+    to{color: rgb(247, 122, 197);}
+}
+
+h1 span:nth-child(5){
+    color: rgb(124, 124, 228);
+    animation-name: main;
+    animation-duration: 4s;
+}
+
+@keyframes main {
+    from{color: darkseagreen}
+    to{color: bisque;}
+}
+
+h1 span:nth-child(6){
+    color: rgb(242, 235, 45);
+    animation-name: back;
+    animation-duration: 5s;
+}
+
+@keyframes back {
+    from{color: rgb(214, 164, 222)}
+    to{color: rgb(187, 162, 149);}
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    width: 430px;
+    height: 35px;
+    border: 1px solid #DFE1E5;
+    border-radius: 10px;
+}
+
+.btncolor{
+    color: rgb(87, 99, 92);
+}
+
+.mainbtn{
+    width: 100px;
+    height: 35px;
+    background-color: #efeff0;
+    border: none;
+    border-radius: 4px;
+    font-family: "helvetica";
+    font-size: 14px;
+    line-height: 16px;
+    margin: 10px;
+}
+
+.mainbtne{
+    width: 100px;
+    height: 36px;
+    background-color: #efeff0;
+    border: none;
+    border-radius: 4px;
+    font-family: "helvetica";
+    font-size: 14px;
+    line-height: 16px;
+}
+
+a:hover{
+    background-color:yellowgreen;
+}
+
+.icon{
+   color: rgb(106, 174, 46);
+   float: right;
+   margin-top: -100px;
+   margin-right: 15px;
+   font-size: 25px;
+}
+
+.email{
+    color: rgb(87, 99, 92);
+    float: right;
+    margin-top: -100px;
+    margin-right: 52px;
+    font-size: 30px;
+ }
+
+.git{
+    color: rgb(87, 99, 92);
+    float: right;
+    margin-top: -100px;
+    margin-right: 8px;
+    font-size: 30px;
+ }
+
+#endname{
+    /* color:rgb(87, 99, 92); */
+    color:#ccc;
+    font-size: 12px;
+    text-align: center;
+}
